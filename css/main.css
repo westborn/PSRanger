@@ -675,6 +675,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   align-self: flex-end;
 }
 
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -683,14 +691,13 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 0.5rem;
 }
 
+.rounded-2xl {
+  border-radius: 1rem;
+}
+
 .rounded-l-full {
   border-top-left-radius: 9999px;
   border-bottom-left-radius: 9999px;
-}
-
-.bg-brightRed {
-  --tw-bg-opacity: 1;
-  background-color: hsl(12 88% 59% / var(--tw-bg-opacity));
 }
 
 .bg-white {
@@ -701,6 +708,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .bg-brightRedSupLight {
   --tw-bg-opacity: 1;
   background-color: hsl(12 88% 95% / var(--tw-bg-opacity));
+}
+
+.bg-brightRed {
+  --tw-bg-opacity: 1;
+  background-color: hsl(12 88% 59% / var(--tw-bg-opacity));
 }
 
 .bg-veryLightGray {
@@ -721,14 +733,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding: 0.75rem;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-
 .py-8 {
   padding-top: 2rem;
   padding-bottom: 2rem;
+}
+
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .px-4 {
@@ -793,8 +805,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-weight: 700;
 }
 
-.leading-tight {
-  line-height: 1.25;
+.text-darkGrayishBlue {
+  --tw-text-opacity: 1;
+  color: hsl(227 12% 61% / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -802,14 +815,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.text-darkGrayishBlue {
-  --tw-text-opacity: 1;
-  color: hsl(227 12% 61% / var(--tw-text-opacity));
-}
-
 .text-brightRed {
   --tw-text-opacity: 1;
   color: hsl(12 88% 59% / var(--tw-text-opacity));
+}
+
+.text-gray-600 {
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
 }
 
 .shadow-2xl {
@@ -968,10 +981,6 @@ body {
 
   .md\:items-start {
     align-items: flex-start;
-  }
-
-  .md\:justify-start {
-    justify-content: flex-start;
   }
 
   .md\:space-y-0 > :not([hidden]) ~ :not([hidden]) {
